@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+@model FormModel;
+@*inherts from the form model above*@
+
+
+<h3>Grade Calculator</h3>
+<form>
+    <h5>(input percentage in category i.e. 95.83)</h5>
+    <label>Assignments</label>
+    <input type="text" id="A" />
+    <br />
+    <label>Group Project</label>
+    <input id="GP" />
+    <br />
+    <label>Quizzes</label>
+    <input id="Q" />
+    <br />
+    <label>Midterm Exam</label>
+    <input id="MX" />
+    <br />
+    <label>Final Exam</label>
+    <input id="FX" />
+    <br />
+    <label>INTEX</label>
+    <input id="Intex" />
+    <br />
+    <br />
+    <h3 id="letter"></h3>
+    <input id="calc-button" type="button" value="Calculate" />
+</form>
+
+
+<!--Link javascript back in for this page-->
+<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+<script src="~/js/JavaScript.js"></script>
+
+<!--print grade-->
+<p id="calculateGrade"></p>
+<br />
+<br />
+<br />
+

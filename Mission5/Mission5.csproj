@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="controllers\" />
+    <None Remove="models\" />
+    <None Remove="Views\" />
+    <None Remove="Views\blah\" />
+    <None Remove="Views\shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
+    <Folder Include="models\" />
+    <Folder Include="Views\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="Views\blah\" />
+    <Folder Include="Views\shared\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\" />
+    <Folder Include="wwwroot\lib\css\" />
+    <Folder Include="wwwroot\lib\jquery\" />
+    <Folder Include="wwwroot\lib\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\css\" />
+    <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\js\" />
+    <Content Remove="wwwroot\lib\" />
+    <Content Remove="wwwroot\lib\css\" />
+    <Content Remove="wwwroot\lib\jquery\" />
+    <Content Remove="wwwroot\lib\js\" />
+  </ItemGroup>
+</Project>

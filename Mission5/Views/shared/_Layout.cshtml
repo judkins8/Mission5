@@ -1,0 +1,29 @@
+﻿<!--Lay out page-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon image-->
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
+    <!--bootstrap and styles sheets-->
+    <link href="lib/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <a asp-controller="blah" asp-action="Index">Home</a>
+        <a asp-controller="blah" asp-action="Form">Grade Calc</a>
+
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--connect bootstrap-->
+    <script src="lib/js/bootstrap.min.js"></script>
+</body>
+</html>
