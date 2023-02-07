@@ -60,5 +60,5 @@ $("#calculateGrade").click(function () {
     }
 
     //display results
-    $('#letter').text("Your final grade is " + letterGrade + " and your percentage is " + finalGrade + "%")
+    alert(`The percentage was ${Math.round(finalGrade)}, which is a(n) ${letterGrade}.`);
 })
